@@ -1,5 +1,3 @@
-alert('Welcome')
-
 // DARK MODE 
 
 // const content = document.getElementsByTagName('body')[0];
@@ -16,7 +14,6 @@ const toggleNavbar = document.querySelector('.toggle-navbar');
 const navbar = document.querySelector('.navbar-links');
 
 toggleNavbar.addEventListener('click', function () {
-    alert('Showme the NAVBAR!')
     navbar.classList.toggle('display-links');
 })
 
