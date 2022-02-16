@@ -9,8 +9,9 @@ body {
     margin: 0;   
 }
 
-.font {
+.font, h3 {
     font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
 }
 
 .center-text {
@@ -60,6 +61,7 @@ body.night {
     width: 100%;
     height: 75px;
     z-index: 5;
+    position: fixed;
 }
 
 .brand-logo {
@@ -192,4 +194,46 @@ body.night {
     margin: auto;
     overflow: hidden;
     padding: 4rem 1rem;
+}
+
+/* SERVICES */
+
+.services {
+    margin-top: 100px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+/* ABOUT SECTION */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+/* MEDIA QUERIES  */
+
+@media only screen and (max-width: 800px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill {
+        margin-top: 50px;        
+    }
+
+    #laptop {
+        text-align: center;
+    }
 }
